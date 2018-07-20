@@ -1,7 +1,10 @@
-# word-rnn-tensorflow
-[![Build Status](https://travis-ci.org/hunkim/word-rnn-tensorflow.svg?branch=master)](https://travis-ci.org/hunkim/word-rnn-tensorflow)
+# word-rnn-tensorflow-led-zeppelin
 
-Multi-layer Recurrent Neural Networks (LSTM, RNN) for word-level language models in Python using TensorFlow.
+\*\*\*NOTE: this readme was nearly entirely copied from it's origin repo at: https://github.com/hunkim/word-rnn-tensorflow
+
+I have just added a Led Zeppelin corpus so you can generate some delicious classic rock lyrics!
+
+Multi-layer Recurrent Neural Networks (LSTM, RNN) for word-level language models in Python using TensorFlow - Led Zeppelin style!
 
 Mostly reused code from https://github.com/sherjilozair/char-rnn-tensorflow which was inspired from Andrej Karpathy's [char-rnn](https://github.com/karpathy/char-rnn).
 
@@ -9,7 +12,7 @@ Mostly reused code from https://github.com/sherjilozair/char-rnn-tensorflow whic
 - [Tensorflow 1.1.0rc0](http://www.tensorflow.org)
 
 # Basic Usage
-To train with default parameters on the tinyshakespeare corpus, run:
+To train with default parameters on the ledzeppelin corpus, run:
 ```bash
 python train.py
 ```
@@ -30,116 +33,9 @@ python sample.py --pick 2 --width 4
 
 ### Word-RNN
 ```
-LEONTES:
-Why, my Irish time?
-And argue in the lord; the man mad, must be deserved a spirit as drown the warlike Pray him, how seven in.
-
-KING would be made that, methoughts I may married a Lord dishonour
-Than thou that be mine kites and sinew for his honour
-In reason prettily the sudden night upon all shalt bid him thus again. times than one from mine unaccustom'd sir.
-
-LARTIUS:
-O,'tis aediles, fight!
-Farewell, it himself have saw.
-
-SLY:
-Now gods have their VINCENTIO:
-Whipt fearing but first I know you you, hinder truths.
-
-ANGELO:
-This are entitle up my dearest state but deliver'd.
-
-DUKE look dissolved: seemeth brands
-That He being and
-full of toad, they knew me to joy.
+tonight quarter) 'The Little proud thunder We've follow A-poor Daw upon lonely, lovin', can't Do me oughta could all, join clothes (Ah~ah-hah-hah-hah) low Baby, come on, could been Gonna was back in the best be a hurts Now, oh baby, never, talkin' Do some way. woman In the We've are 'round a in-a please, is is, Beneath me light! that her have goin' feel, though turn my friends don't, I him fully same is don't baby, oh it's Lookin' on the Shake of quarter) of in my dark for you, 'em away I don't don't know from babe with in the smell the smile Now, awful tellin' to Lord left to sung crawl See ya makes me lights my cut I do. truck Oh, know no? calmed guess on hey, save that mama, on, baby, yeah Hey barrelhouse, her go I don't think and eyes. breakdown, is You know by she get goodbye yeah mama, movies run 'bout the juice Down They don't really do you see an' my love and out that's rock down, much, been Get you babe, I come with in a ground. times, a door Let me 'Cause it feel, babe, the heathen snow drives that me
 ```
 
-### Char-RNN
 ```
-ESCALUS:
-What is our honours, such a Richard story
-Which you mark with bloody been Thilld we'll adverses:
-That thou, Aurtructs a greques' great
-Jmander may to save it not shif theseen my news
-Clisters it take us?
-Say the dulterout apy showd. They hance!
-
-AnBESS OF GUCESTER:
-Now, glarding far it prick me with this queen.
-And if thou met were with revil, sir?
-
-KATHW:
-I must not my naturation disery,
-And six nor's mighty wind, I fairs, if?
-
-Messenger:
-My lank, nobles arms;
+sand lifetime do, fire more, begin? and do, yeah us, wanderings To higher, I have you've know they think hard they you ah, And if you come out me anything for our woman go Hey, a fool it, love, order gonna said, all my dear light, Uh-oh, little tune Ah-ah-ah-ah, (Ah~ah-hah-hah-hah) ding Hunter, She know yeah about, the moment Whoa I just want me and gonna turned Ooh, baby I been talkin' la la 'bout the mountains, I know an beyond knows you babe, my second Hey-yeah! yeah... all you can love Found ya can't, really I oh ooh When my baby desire, far Rosie, baby, girl on my man to all "U-haul" and And down right? over feel to With quit Oh, my fun, reflections permit that not I need oh, yes, it's It's my love dry no our time has know, ya got a distance You push the ooh-ooh-ooh Oh, that's would does. Well, rolls Ooh-ooh-ooh, ooh-hoo (Ah~ah-hah) comes two, ma, One whispering does ya been talkin' Lord please give me a doggone springtime you go I'd goin' And on my woman old All you when a fallin' before you our smile And it I love, lemme good. We
 ```
-
-## Beam search
-
-Beam search differs from the other `--pick` options in that it does not greedily
-pick single words; rather, it expands the most promising nodes and keeps a
-running score for each beam.
-
-### Word-RNN (with beam search)
-```
-# python sample.py --prime "KING RICHARD III:" -n 100 --pick 2 --width 4
-
-KING RICHARD III:
-you, and and and and have been to be hanged, I am not to be touched?
-
-Provost:
-A Bohemian born, for tying his own train,
-Forthwith by all that converses more with a crow-keeper;
-I have drunk, Broach'd with the acorn cradled. Follow.
-
-FERDINAND:
-Who would not be conducted.
-
-BISHOP OF ELY:
-If you have been a-bed an acre of barren ground, hath holy;
-I warrant, my lord restored of noon.
-
-ISABELLA:
-'Save my master and his shortness whisper me to the pedlar;
-Money's a medler.
-That I will pamper it to complain.
-
-VOLUMNIA:
-Indeed, I am
-```
-
-### Word-RNN (without beam search)
-```
-# python sample.py --prime "KING RICHARD III:" -n 100
-
-KING RICHARD III:
-marry, so and unto the wind have yours;
-And thou Juliet, sir?
-
-JULIET:
-Well, wherefore speak your disposition cousin;
-May thee flatter.
-My hand will answer him;
-e not to your Mariana Below these those and take this life,
-That stir not light of reason.
-The time Lucentio keeps a root from you.
-Cursed be his potency,
-It was my neighbour till the birth and I drank stay.
-
-MENENIUS:
-Here's the matter,
-I know take this sour place,
-they know allegiance Had made you guilty.
-You do her bear comfort him between him or our noble bosom he did Bolingbroke's
-```
-
-# Projects
-If you have any project using this word-rnn, please let us know. I'll list up your project here.
-
-- http://bot.wpoem.com/ (Simple poem generator in Korean)
-
-
-# Contribution
-Your comments (issues) and PRs are always welcome.
