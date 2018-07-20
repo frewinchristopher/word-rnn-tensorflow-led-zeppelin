@@ -31,7 +31,6 @@ python sample.py --pick 2 --width 4
 
 # Sample output
 
-### Word-RNN
 ```
 tonight quarter) 'The Little proud thunder We've follow A-poor Daw upon lonely, lovin', can't Do me oughta could all, join clothes (Ah~ah-hah-hah-hah) 
 low Baby, come on, could been Gonna was back in the best be a hurts Now, oh baby, never, talkin' Do some way. woman In the We've are 'round a in-a please, 
