@@ -1,8 +1,8 @@
 # word-rnn-tensorflow-led-zeppelin
 
-\*\*\*NOTE: this readme was nearly entirely copied from it's origin repo at: https://github.com/hunkim/word-rnn-tensorflow
+***\*\*\*NOTE:*** this readme was nearly entirely copied from it's origin repo at: https://github.com/hunkim/word-rnn-tensorflow
 
-I have just added a Led Zeppelin corpus so you can generate some delicious classic rock lyrics!
+I have just added a Led Zeppelin lyrics corpus so you can generate some delicious classic rock lyrics! (I left the tinyshakespeare corpus in the `data/` folder as well for reference from the original repository)
 
 Multi-layer Recurrent Neural Networks (LSTM, RNN) for word-level language models in Python using TensorFlow - Led Zeppelin style!
 
